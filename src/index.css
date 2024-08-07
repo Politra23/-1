@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&family=Oswald:wght@200..700&display=swap');
 *{
     margin:0;
     padding:0;
@@ -20,12 +22,28 @@ header{
     left: 0;
     width: 100%;
     height: 110px;
-    background-color: cadetblue;
+    background-color: cadetblue;    
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px;
 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    
+}
+
+h1{
+    padding-bottom: 10px;
+    color:white
 }
 
 img{
@@ -48,7 +66,7 @@ img{
 }   
 
 .box{
-    width: 490px;
+    min-width: 490px;
     height: 500px; 
     background-color: dodgerblue;
     border-radius: 40px;
@@ -59,17 +77,25 @@ img{
     padding-top: 25px;
 }
 .output{
-    width: 80%;
+    min-width: 80%;
     height: 75px; 
-    background-color: rgb(226, 21, 192);
-    border-radius: 20px;
+    background-color: rgb(156, 214, 216);
+    border-radius: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    padding-left: 15px;
 
 }
 
 .asd{
     width: 100%;
     height: 80%;
-    background-color: white;
+    background-color: rgb(71, 119, 221);
     border-radius: 15px;
     display: flex;
 }
@@ -84,17 +110,19 @@ img{
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
+    transition: all ease 0.5;
 
 }
 
 .numbers div {
-    background-color: rgb(13, 177, 76);
+    background-color: rgb(216, 179, 15);
     width: 23.3%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    transition: all ease 0.5;
 }
 
 .activites{
@@ -110,12 +138,30 @@ img{
 }
 
 .activites div{
-    background-color: rgb(228, 206, 11);
+    background-color: rgb(88, 231, 231);
     width: 60%;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+
+}
+
+.header__list li:hover{
+    transform:scale(0.9);
+    transition: all ease 0.2;
+}
+
+
+.numbers div:hover{
+    transform:scale(0.9);
+    transition: all ease 0.2;
+
+}
+
+.activites div:hover{
+    transform:scale(0.9);
+    transition: all ease 0.2;
 
 }
