@@ -8,7 +8,15 @@ let firstNumber = '';
 let currentInput = '';
 
 function updateOutput(value) {
-    output.textContent = value;
+    output.textContent = value
+    // if (parseFloat(value)<1000){
+    //     output.textContent = value
+    // }
+    // else{
+    //     output.textConten = ''
+    //     currentInput = ''
+
+    // }
 }
 
 function calculate(num1, num2, operator) {
@@ -21,7 +29,7 @@ function calculate(num1, num2, operator) {
         if (a > 1000 || b > 1000){
             alert('харе')
             return ''
-        }  return (a * b).toString
+        }  return (a * b).toString();
     }
     if (operator === 'divide'){
         if(b === 0){
@@ -41,6 +49,12 @@ function handleActivity(id) {
         currentInput = calculate(firstNumber, currentInput, operator);
         updateOutput(currentInput);
         firstNumber = operator = '';
+
+    
+    }
+    else if (id==='clear'){
+        firstNumber = operator = currentInput = ''
+        updateOutput('')
     }
     else {
         firstNumber = currentInput;
@@ -87,5 +101,8 @@ document.addEventListener('keydown', (event)=> {
 
 
 }) 
+
+
+
 
 
